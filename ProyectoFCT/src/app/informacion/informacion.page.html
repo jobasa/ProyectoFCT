@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Información</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-item >
+      <ion-label class="ion-text-center"><b>Nombre: </b>{{this.evento.nombre}}</ion-label>
+    </ion-item>
+  
+    <ion-card-content>
+      <ion-item >
+      <ion-img [src]="this.evento.img"></ion-img>
+    </ion-item>
+      <ion-item >
+        <ion-label><b>Lugar: </b>{{this.evento.lugar}}</ion-label>
+      </ion-item>
+      <ion-item >
+        <ion-label><b>Fecha: </b>{{this.evento.fecha}}</ion-label>
+      </ion-item>
+      <ion-item >
+        <ion-button slot="end" [routerLink]="" routerDirection="forward">Comprar entradas</ion-button>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  
+  <!--<ion-toolbar color="primary">
+
+      <ion-title class="ion-text-center">{{id}}</ion-title>
+
+  </ion-toolbar>-->
+
+
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Añade nuevo concierto/evento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-item>
+      <ion-label position="floating">Nombre <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input  [type]="Text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Lugar <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input  [type]="Text" [(ngModel)]="lugar"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Fecha <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input  [type]="Text" [(ngModel)]="fecha"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Imagen <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input  [type]="Text" [(ngModel)]="img" placeholder="Copia el link de la foto"></ion-input>
+    </ion-item>
+  </div>
+  <div>
+    <ion-button color="success" (click) ="insertar()" href="/home">Insertar</ion-button>
+  </div>
+</ion-content>
